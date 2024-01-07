@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing Script&display=swap">
+
+
     <title>Responsive Portfolio Website</title>
 </head>
 
@@ -23,7 +26,9 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Priyanshu</a>
+            <a href="#" class="nav__logo"
+                style="font-family: 'Dancing Script', cursive; font-size: 25px; font-weight: normal; letter-spacing: 2px; color: #000;">Priyanshu's
+                Resume</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
@@ -100,7 +105,7 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="12" y="18" href="./assets/img/perfil.png" />
+                                <image class="home__blob-img" x="12" y="18" href="./assets/img/profile.png" />
                             </g>
                         </svg>
                     </div>
@@ -497,59 +502,247 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio1.jpg" alt="portfolio image 1" class="portfolio__img">
+            <div class="portfolio__container container swiper-container"
+                style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
+                <div class="swiper-wrapper"
+                    style="display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;">
+
+                    <!--==================== PORTFOLIO 0 ====================-->
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio0.png" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Modern Website</h3>
-                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
-                                animated interactions.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <h2 class="portfolio__title">E COMMERCE WEBSITE - MERN Stack</h2>
+                            <p class="portfolio__subtitle">Jun 2023 - Jul 2023</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>Implemented role-based access control.</li>
+                                    <li>Integrated Stripe for secure payments.</li>
+                                    <li>Enabled user authentication (website, Google).</li>
+                                    <li>Developed robust email verification.</li>
+                                    <li>Created intuitive product filtering.</li>
+                                    <li>Implemented session management with a 3-day validity for returning users,
+                                        utilizing JWT and bcrypt for secure token handling.</li>
+                                    <li>Designed an intuitive admin dashboard for effective product, order, and user
+                                        management, including valuable analytics for performance tracking.</li>
+                                </ul>
+                            </div>
+
+                            <br />
+                            <a href="https://easy-shop-6isd.onrender.com/"
+                                class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/priyanshu1101/E_Commerce_Website"
+                                class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://drive.google.com/file/d/12FAMXM_7V1V86UnjbseSxaA40bJh4HaE/view?usp=drive_link"
+                                class="button button--flex button--small portfolio__button">
+                                Video Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio1.jpg" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                        <div class="portfolio__data">
+                            <h2 class="portfolio__title">Billing System - MERN Stack</h2>
+                            <p class="portfolio__subtitle">Feb 2023 - Mar 2023</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>Secure billing system with two forms.</li>
+                                    <li>User authorization, encrypted password protection.</li>
+                                    <li>Download button for exporting records to CSV file.</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <a href="https://billing-system-form.onrender.com/"
+                                class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/priyanshu1101/Billing-System"
+                                class="button button--flex button--small portfolio__button">
+                                Github
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 2 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio2.jpg" alt="portfolio image 2" class="portfolio__img">
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio2.jpg" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Brand Design</h3>
-                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
-                                animated interactions.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <h2 class="portfolio__title">Memories Application - MERN Stack</h2>
+                            <p class="portfolio__subtitle">Jan 2023 - Feb 2023</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>Full-stack MERN web application for creating, editing, and deleting posts.</li>
+                                    <li>Modern and scalable design with React, Redux, and Material-UI.</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <a href="https://social-media-a9vd.onrender.com/"
+                                class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/priyanshu1101/Social-Media-Application-Mern-Stack-"
+                                class="button button--flex button--small portfolio__button">
+                                Github
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 3 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio3.jpg" alt="portfolio image 3" class="portfolio__img">
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio3.jpg" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Online Store</h3>
-                            <p class="portfolio__description">Website adaptable to all devices, with ui components and
-                                animated interactions.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <h2 class="portfolio__title">Weather App</h2>
+                            <p class="portfolio__subtitle">Jul 2022 - Jul 2022</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>Responsive Weather App using HTML, CSS, and JavaScript.</li>
+                                    <li>User-friendly interface for searching weather information.</li>
+                                    <li>Integration with OpenWeatherMap API for real-time weather data.</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <a href="https://priyanshu1101.github.io/Static-Weather-App/"
+                                class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/priyanshu1101/Static-Weather-App"
+                                class="button button--flex button--small portfolio__button">
+                                Github
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
+                    <!--==================== PORTFOLIO 4 ====================-->
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio4.png" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                        <div class="portfolio__data">
+                            <h2 class="portfolio__title">Hotel Renting - Spring Framework</h2>
+                            <p class="portfolio__subtitle">Jun 2022 - Jun 2022</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>Multi-seller, multi-buyer hotel rental system.</li>
+                                    <li>User registration for login, posting, and renting hotels.</li>
+                                    <li>Utilizes MySQL database for data management.</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <a href="https://github.com/priyanshu1101/HotelRenting.git"
+                                class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 5 ====================-->
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio5.jpg" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                        <div class="portfolio__data">
+                            <h2 class="portfolio__title">The Simon Game - HTML CSS Javascript</h2>
+                            <p class="portfolio__subtitle">Associated with All India Council for Technical Education
+                                (AICTE)</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>Classic version of Simon Game.</li>
+                                    <li>Start by pressing any key, memorize and repeat key pattern to advance.</li>
+                                    <li>Wrong key ends the game; restart required.</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <a href="https://priyanshu1101.github.io/simongame/"
+                                class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/priyanshu1101/simongame"
+                                class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--==================== PORTFOLIO 6 ====================-->
+                    <div class="portfolio__content grid swiper-slide"
+                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
+                        <img src="./assets/img/portfolio6.jpg" alt="portfolio image 1" class="portfolio__img"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                        <div class="portfolio__data">
+                            <h2 class="portfolio__title">To-Do List - NodeJs</h2>
+                            <p class="portfolio__subtitle">Associated with The NorthCap University</p>
+                            <br />
+                            <div class="portfolio__features">
+                                <h3 class="portfolio__subtitle">Key Features:</h3>
+                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
+                                    <li>A To-do list app with a user-friendly interface.</li>
+                                    <li>Displays the current date and a common list for adding/removing items.</li>
+                                    <li>Allows users to create custom lists.</li>
+                                </ul>
+                            </div>
+                            <br />
+                            <a href="https://to-do-list-5738.onrender.com/"
+                                class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="https://github.com/priyanshu1101/Todolist-v2"
+                                class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="swiper-button-next">
+                <div class="swiper-button-next"
+                    style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">
                     <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                 </div>
-                <div class="swiper-button-prev">
+                <div class="swiper-button-prev"
+                    style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
                     <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"
+                    style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);"></div>
 
             </div>
         </section>
+
+
 
         <!--==================== TESTIMONIAL ====================-->
         <section class="testimonial section">
@@ -615,33 +808,30 @@
                     </div>
                 </div>
 
-                <form class="contact__form grid">
+                <form action="https://formspree.io/f/xvoeonzn" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="Name" name="name" class="contact__input" required>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-                        <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="Email" name="email" class="contact__input" required>
                         </div>
                     </div>
-                    <button type="submit" style="display:none">Submit</button>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea id="message" name="Message" cols="0" rows="7" class="contact__input"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </div>
                 </form>
+
 
             </div>
         </section>
