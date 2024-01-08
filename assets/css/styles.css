@@ -487,15 +487,37 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+.skills__c {
   width: 90%;
 }
 
-.skills__css {
+.skills__java {
   width: 80%;
 }
 
+.skills__html {
+  width: 70%;
+}
+
+.skills__css {
+  width: 60%;
+}
+
+
 .skills__js {
+  width: 95%;
+}
+
+.skills__redux {
+  width: 80%;
+}
+
+.skills__mongodb
+{
+  width: 80%;
+}
+
+.skills__mysql {
   width: 70%;
 }
 
@@ -503,32 +525,28 @@ img {
   width: 85%;
 }
 
-.skills__php {
+.skills__node {
   width: 90%;
 }
 
-.skills__node {
-  width: 70%;
+.skills__express {
+  width: 90%;
 }
 
-.skills__firebase {
-  width: 60%;
-}
-
-.skills__python {
+.skills__spring {
   width: 65%;
 }
 
-.skills__figma {
-  width: 60%;
-}
-
-.skills__sketch {
+.skills__materialui {
   width: 70%;
 }
 
-.skills__photoshop {
-  width: 80%;
+.skills__git {
+  width: 85%;
+}
+
+.skills__github {
+  width: 85%;
 }
 
 .skills__close .skills__list {

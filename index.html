@@ -111,7 +111,7 @@
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hi, I am Priyanshu</h1>
-                        <h3 class="home__subtitle">Frontend Developer</h3>
+                        <h3 class="home__subtitle" id="dynamic-subtitle"></h3>
                         <p class="home__discription">High-level experience in web design and development, producing
                             quality work.</p>
                         <a href="#contact" class="button button--flex" style="margin-bottom: 10px;">
@@ -122,6 +122,63 @@
                             View Resume<i class="uil uil-file-alt button__icon"></i>
                         </a>
                     </div>
+
+                    <script>
+                        const subtitles = ["Full Stack Developer", "Currently working on MERN stack", "And practising DSA..."];
+                        let currentSubtitleIndex = 0;
+                        const subtitleElement = document.getElementById('dynamic-subtitle');
+
+                        function typeText() {
+                            const targetSubtitle = subtitles[currentSubtitleIndex];
+                            let currentText = '';
+                            let textIndex = 0;
+
+                            const typingInterval = setInterval(() => {
+                                currentText = targetSubtitle.substring(0, textIndex);
+                                subtitleElement.innerHTML = currentText + '<span class="cursor">|</span>';
+                                textIndex++;
+
+                                if (textIndex > targetSubtitle.length) {
+                                    // Clear the text after a delay
+                                    setTimeout(() => {
+                                        clearText();
+                                    }, 1000);
+                                    clearInterval(typingInterval);
+                                }
+                            }, 100);
+                        }
+
+                        function clearText() {
+                            const targetSubtitle = subtitles[currentSubtitleIndex];
+                            let textIndex = targetSubtitle.length;
+                            const clearingInterval = setInterval(() => {
+                                subtitleElement.innerHTML = targetSubtitle.substring(0, textIndex) + '<span class="cursor">|</span>';
+                                textIndex--;
+
+                                if (textIndex < 0) {
+                                    currentSubtitleIndex = (currentSubtitleIndex + 1) % subtitles.length;
+                                    typeText(); // Move on to the next subtitle
+                                    clearInterval(clearingInterval);
+                                }
+                            }, 50);
+                        }
+
+                        // Start the typing effect
+                        typeText();
+                    </script>
+
+                    <style>
+                        .cursor {
+                            animation: blink 0.8s infinite;
+                        }
+
+                        @keyframes blink {
+                            50% {
+                                opacity: 0;
+                            }
+                        }
+                    </style>
+
 
 
                 </div>
@@ -175,7 +232,7 @@
             <span class="section__subtitle">My Technical Skills</span>
             <div class="skills__container container grid">
                 <!--==================== SKILLS 1 ====================-->
-                <div class="skills__content skills__close">
+                <div class="skills__content skills__open">
                     <div class="skills__header">
                         <i class="uil uil-brackets-curly skills__icon"></i>
                         <div>
@@ -188,7 +245,24 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">C++</h3>
-                                <span class="skills__number"><i class="fab fa-cuttlefish"></i></span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__c"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JAVA</h3>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__html"></span>
@@ -197,40 +271,18 @@
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">JAVA</h3>
-                                <span class="skills__number"><i class="fab fa-java"></i></span>
+                                <h3 class="skills__name">CSS</h3>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__css"></span>
                             </div>
                         </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">HTML</h3>
-                                <span class="skills__number"><i class="fab fa-html5"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__js"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
-                                <span class="skills__number"><i class="fab fa-css3"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
-                            </div>
-                        </div>
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Javascript</h3>
-                                <span class="skills__number"><i class="fab fa-js"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
+                                <span class="skills__percentage skills__js"></span>
                             </div>
                         </div>
                     </div>
@@ -250,17 +302,15 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">React Js</h3>
-                                <span class="skills__number"><i class="fab fa-react"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__php"></span>
+                                <span class="skills__percentage skills__react"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">NODE Js</h3>
-                                <span class="skills__number"><i class="fab fa-node-js"></i></span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__node"></span>
@@ -270,20 +320,18 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Express Js</h3>
-                                <span class="skills__number"><i class="fab fa-node-js"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__firebase"></span>
+                                <span class="skills__percentage skills__express"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Spring Boot</h3>
-                                <span class="skills__number"><i class="fab fa-java"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__python"></span>
+                                <span class="skills__percentage skills__spring"></span>
                             </div>
                         </div>
                     </div>
@@ -303,20 +351,18 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">MySQL</h3>
-                                <span class="skills__number"><i class="fas fa-database"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__figma"></span>
+                                <span class="skills__percentage skills__mysql"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">MongoDB</h3>
-                                <span class="skills__number"><i class="fab fa-mdb"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__sketch"></span>
+                                <span class="skills__percentage skills__mongodb"></span>
                             </div>
                         </div>
 
@@ -336,39 +382,35 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Material UI</h3>
-                                <span class="skills__number"><i class="fab fa-react"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__figma"></span>
+                                <span class="skills__percentage skills__materialui"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Git</h3>
-                                <span class="skills__number"><i class="fab fa-git"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__sketch"></span>
+                                <span class="skills__percentage skills__git"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Github</h3>
-                                <span class="skills__number"><i class="fab fa-github"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__photoshop"></span>
+                                <span class="skills__percentage skills__github"></span>
                             </div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">React Redux</h3>
-                                <span class="skills__number"><i class="fab fa-react"></i></span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__photoshop"></span>
+                                <span class="skills__percentage skills__redux"></span>
                             </div>
                         </div>
                     </div>
