@@ -11,7 +11,7 @@
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -447,7 +447,14 @@
                                 <span class="qualification__subtitle">The Northcap University, Gurugram</span>
                                 <div class="qualification__calender">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2024 (Expected)
+                                    2020 - 2024
+                                </div>
+                                <div class="qualification__grade">
+                                    <span class="qualification__grade-label"
+                                        style="font-weight: bold; font-size: small;">Grade: 8.66
+                                        CGPA</span>
+                                    <i class="fas fa-check-circle qualification__grade-value"></i>
+                                    <!-- Use a suitable icon for A grade -->
                                 </div>
                             </div>
 
@@ -472,6 +479,13 @@
                                     <i class="uil uil-calendar-alt"></i>
                                     2019 - 2020
                                 </div>
+                                <div class="qualification__grade">
+                                    <span class="qualification__grade-label"
+                                        style="font-weight: bold; font-size: small;">Grade:
+                                        93.4%</span>
+                                    <i class="fas fa-check-circle qualification__grade-value"></i>
+                                    <!-- Use a suitable icon for A grade -->
+                                </div>
                             </div>
                         </div>
                         <!--==================== QUALIFICATION 3 ====================-->
@@ -483,6 +497,13 @@
                                     <i class="uil uil-calendar-alt"></i>
                                     2017 - 2018
                                 </div>
+                                <div class="qualification__grade">
+                                    <span class="qualification__grade-label"
+                                        style="font-weight: bold; font-size: small;">Grade:
+                                        84.3%</span>
+                                    <i class="fas fa-check-circle qualification__grade-value"></i>
+                                    <!-- Use a suitable icon for A grade -->
+                                </div>
                             </div>
 
                             <div>
@@ -493,47 +514,61 @@
                     </div>
                 </div>
 
-                <div class="qualification__sections">
-
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">SDE Intern</h3>
-                                <span class="qualification__subtitle">PATIL KAKI (Featured in Shark Tank India
-                                    S2)</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Mar '23 - Jun '23
-                                </div>
+                <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <div class="qualification__content" data-content id="work">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">SDE Intern</h3>
+                            <span class="qualification__subtitle">PATIL KAKI (Featured in Shark Tank India S2)</span>
+                            <div class="qualification__calender">
+                                <i class="uil uil-calendar-alt"></i>
+                                Mar '23 - Jun '23
                             </div>
 
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                            <!-- Work details for SDE Intern presented as a list -->
+                            <div class="qualification__work-details" style="margin-top: 10px;">
+                                <p style="margin-bottom: 5px;">&bull; Increased marketing team productivity by 23% by
+                                    automating communication channels, saving 9 hours weekly.</p>
+                                <p style="margin-bottom: 5px;">&bull; Reduced order cancellations by 11% by developing
+                                    an efficient order delivery scheduling algorithm.</p>
+                                <p style="margin-bottom: 5px;">&bull; Developed an AWS Lambda script that created and
+                                    deleted databases based on network traffic.</p>
                             </div>
                         </div>
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
 
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Summer Intern</h3>
+                            <span class="qualification__subtitle">FUTURE READY TALENT BY AICTE</span>
+                            <div class="qualification__calender">
+                                <i class="uil uil-calendar-alt"></i>
+                                Jun '22 - Jul '22
                             </div>
 
-                            <div>
-                                <h3 class="qualification__title">Summer Intern</h3>
-                                <span class="qualification__subtitle">FUTURE READY TALENT BY AICTE</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Jun '22 - Jul '22
-                                </div>
+                            <!-- Work details for Summer Intern presented as a list -->
+                            <div class="qualification__work-details" style="margin-top: 10px;">
+                                <p style="margin-bottom: 5px;">&bull; Crafted an interactive memory game using HTML,
+                                    CSS, and JavaScript and hosted it on Microsoft Azure.</p>
+                                <p style="margin-bottom: 5px;">&bull; The web application was recognized with a GitHub
+                                    Pro pack and a Microsoft T-shirt.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -900,11 +935,12 @@
                         </div>
 
                         <div>
-                            <i class="uil uil-star testimonial__icon-star"></i>
-                            <i class="uil uil-star testimonial__icon-star"></i>
-                            <i class="uil uil-star testimonial__icon-star"></i>
-                            <i class="uil uil-star testimonial__icon-star"></i>
-                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
+                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
+                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
+                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
+                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
+
                         </div>
                     </div>
                     <p class="testimonial__description">I wholeheartedly recommend Priyanshu for his exceptional
@@ -978,36 +1014,25 @@
     <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="footer__bg">
-            <div class="footer__container container grid">
+            <div style="display: flex; justify-content: space-between; align-items: center;" class="container grid">
                 <div>
-                    <h1 class="footer__title">Priyanshu</h1>
-                    <span class="footer__subtitle">Fullstack Developer</span>
+                    <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Priyanshu</h1>
+                    <h2 style="font-size: 1rem; color: white;">Fullstack Developer</h2>
                 </div>
-                <ul class="footer__links">
+                <ul style="list-style: none; display: flex; gap: 20px; color: white;">
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="#portfolio" style="text-decoration: none;" class="footer__links">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer__link">Contact me</a>
+                        <a href="#contact" style="text-decoration: none;" class="footer__links">Contact
+                            me</a>
                     </li>
                 </ul>
-                <div class="footer__socials">
-                    <a href="https://www.facebook.com/" aria-label="footer__social" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" aria-label="footer__social" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/" aria-label="footer__social" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                </div>
             </div>
             <p class="footer__copy">&#169; Priyanshu Bansal. All right reserved</p>
         </div>
     </footer>
+
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" aria-label="scroll-up" class="scrollup" id="scroll-up">

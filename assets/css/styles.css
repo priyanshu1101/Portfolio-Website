@@ -512,8 +512,7 @@ img {
   width: 80%;
 }
 
-.skills__mongodb
-{
+.skills__mongodb {
   width: 80%;
 }
 
@@ -938,6 +937,7 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  color: white
 }
 
 .footer__links:hover {
