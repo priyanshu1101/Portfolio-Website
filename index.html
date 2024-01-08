@@ -26,9 +26,41 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"
-                style="font-family: 'Dancing Script', cursive; font-size: 28px; font-weight: normal; letter-spacing: 2px;">Priyanshu's
-                Portfolio</a>
+            <a href="#" class="portfolio-logo">PB</a>
+            <style>
+                .portfolio-logo {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 36px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    color: #2c3e50;
+                    /* Dark gray color */
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    /* Rounded corners */
+                    margin-top: 20px;
+                    /* Margin above the logo */
+
+                    /* 3D effect with box shadows */
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.1);
+                    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+                }
+
+                .portfolio-logo:hover {
+                    color: #ecf0f1;
+                    /* Light gray color on hover */
+                    background-color: #34495e;
+                    /* Darker background on hover */
+                    transform: translate(0, -5px);
+                    /* Move up on hover */
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.2);
+                    /* Adjusted shadows on hover */
+                }
+            </style>
+
+
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
