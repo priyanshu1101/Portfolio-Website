@@ -1,1042 +1,1636 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1458/1458201.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/1458/1458201.png"
+      type="image/png"
+    />
 
     <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing Script&display=swap">
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing Script&display=swap"
+    />
 
     <title>Priyanshu Bansal</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo"
-                style="font-family: 'Dancing Script', cursive; font-size: 28px; font-weight: normal; letter-spacing: 2px;">Priyanshu's
-                Portfolio</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> ContactMe
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
+      <nav class="nav container">
+        <a
+          href="#"
+          class="nav__logo"
+          style="
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            font-weight: normal;
+            letter-spacing: 2px;
+          "
+          >Priyanshu's Portfolio</a
+        >
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> ContactMe
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- theme change button  -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-                <!-- theme change button  -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/bansal-priyanshu/" aria-label="home__social-icon"
-                            target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="mailto:priyanshubansal35@gmail.com" aria-label="home__social-icon" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-envelope"></i>
-                        </a>
-                        <a href="https://github.com/priyanshu1101/" aria-label="home__social-icon" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-                    <div class="home__img">
-                        <svg class="home__blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/bansal-priyanshu/"
+                aria-label="home__social-icon"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="mailto:priyanshubansal35@gmail.com"
+                aria-label="home__social-icon"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/priyanshu1101/"
+                aria-label="home__social-icon"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewbox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="12" y="18" href="./assets/img/profile.png" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I am Priyanshu</h1>
-                        <h3 class="home__subtitle" id="dynamic-subtitle"></h3>
-                        <p class="home__discription">High-level experience in web design and development, producing
-                            quality work.</p>
-                        <a href="#contact" class="button button--flex" style="margin-bottom: 10px;">
-                            Contact Me<i class="uil uil-message button__icon"></i>
-                        </a>
-                        <a href="https://cwpm.short.gy/priyanshu-resume" class="button button--flex view-resume"
-                            style="margin-left: 10px;">
-                            View Resume<i class="uil uil-file-alt button__icon"></i>
-                        </a>
-                    </div>
-
-                    <script>
-                        const subtitles = ["Full Stack Developer", "Currently working on MERN stack", "And practising DSA..."];
-                        let currentSubtitleIndex = 0;
-                        const subtitleElement = document.getElementById('dynamic-subtitle');
-
-                        function typeText() {
-                            const targetSubtitle = subtitles[currentSubtitleIndex];
-                            let currentText = '';
-                            let textIndex = 0;
-
-                            const typingInterval = setInterval(() => {
-                                currentText = targetSubtitle.substring(0, textIndex);
-                                subtitleElement.innerHTML = currentText + '<span class="cursor">|</span>';
-                                textIndex++;
-
-                                if (textIndex > targetSubtitle.length) {
-                                    // Clear the text after a delay
-                                    setTimeout(() => {
-                                        clearText();
-                                    }, 1000);
-                                    clearInterval(typingInterval);
-                                }
-                            }, 100);
-                        }
-
-                        function clearText() {
-                            const targetSubtitle = subtitles[currentSubtitleIndex];
-                            let textIndex = targetSubtitle.length;
-                            const clearingInterval = setInterval(() => {
-                                subtitleElement.innerHTML = targetSubtitle.substring(0, textIndex) + '<span class="cursor">|</span>';
-                                textIndex--;
-
-                                if (textIndex < 0) {
-                                    currentSubtitleIndex = (currentSubtitleIndex + 1) % subtitles.length;
-                                    typeText(); // Move on to the next subtitle
-                                    clearInterval(clearingInterval);
-                                }
-                            }, 50);
-                        }
-
-                        // Start the typing effect
-                        typeText();
-                    </script>
-
-                    <style>
-                        .cursor {
-                            animation: blink 0.8s infinite;
-                        }
-
-                        @keyframes blink {
-                            50% {
-                                opacity: 0;
-                            }
-                        }
-                    </style>
-
-
-
-                </div>
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down"></i>
-                    </a>
-                </div>
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="20"
+                    y="15"
+                    href="./assets/img/profile.png"
+                  />
+                </g>
+              </svg>
             </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
-            <div class="about__container container grid">
-                <img src="./assets/img/about.jpg" alt="about" class="about__img">
-                <div class="about__data">
-                    <p class="about__description">
-                        Web developer, with extensive knowledge and years of experience, working in web technologies and
-                        Ui / Ux design, delivering quality work.
-                    </p>
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">04+</span>
-                            <span class="about__info-name">Months Internship <br> experience</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Completed <br> project</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
-                        </div>
-                    </div>
-                    <div class="about__buttons">
-                        <a href="https://cwpm.short.gy/Priyanshu_Resume-Download" download class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My Technical Skills</span>
-            <div class="skills__container container grid">
-                <!--==================== SKILLS 1 ====================-->
-                <div class="skills__content skills__open">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Programming</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">C++</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__c"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">JAVA</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__java"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">HTML</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__html"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__css"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Javascript</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__js"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SKILLS 2 ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-game-structure skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Frameworks</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">React Js</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">NODE Js</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__node"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Express Js</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__express"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Spring Boot</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__spring"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SKILLS 3 ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-database skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Databases</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">MySQL</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__mysql"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">MongoDB</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__mongodb"></span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!--==================== SKILLS 4 ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-paint-tool skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Tools and Tech</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Material UI</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__materialui"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Git</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__git"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Github</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__github"></span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">React Redux</h3>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__redux"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I am Priyanshu</h1>
+              <h3 class="home__subtitle" id="dynamic-subtitle"></h3>
+              <p class="home__discription">
+                High-level experience in web design and development, producing
+                quality work.
+              </p>
+              <a
+                href="#contact"
+                class="button button--flex"
+                style="margin-bottom: 10px"
+              >
+                Contact Me<i class="uil uil-message button__icon"></i>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1CRFBaPHYqqZMB3mT0-7iftNOS4DhFe9q/view?usp=sharing"
+                class="button button--flex view-resume"
+                style="margin-left: 10px"
+              >
+                View Resume<i class="uil uil-file-alt button__icon"></i>
+              </a>
             </div>
 
+            <script>
+              const subtitles = [
+                "Full Stack Developer",
+                "Currently working on MERN stack",
+                "And practising DSA...",
+              ];
+              let currentSubtitleIndex = 0;
+              const subtitleElement =
+                document.getElementById("dynamic-subtitle");
+
+              function typeText() {
+                const targetSubtitle = subtitles[currentSubtitleIndex];
+                let currentText = "";
+                let textIndex = 0;
+
+                const typingInterval = setInterval(() => {
+                  currentText = targetSubtitle.substring(0, textIndex);
+                  subtitleElement.innerHTML =
+                    currentText + '<span class="cursor">|</span>';
+                  textIndex++;
+
+                  if (textIndex > targetSubtitle.length) {
+                    // Clear the text after a delay
+                    setTimeout(() => {
+                      clearText();
+                    }, 1000);
+                    clearInterval(typingInterval);
+                  }
+                }, 100);
+              }
+
+              function clearText() {
+                const targetSubtitle = subtitles[currentSubtitleIndex];
+                let textIndex = targetSubtitle.length;
+                const clearingInterval = setInterval(() => {
+                  subtitleElement.innerHTML =
+                    targetSubtitle.substring(0, textIndex) +
+                    '<span class="cursor">|</span>';
+                  textIndex--;
+
+                  if (textIndex < 0) {
+                    currentSubtitleIndex =
+                      (currentSubtitleIndex + 1) % subtitles.length;
+                    typeText(); // Move on to the next subtitle
+                    clearInterval(clearingInterval);
+                  }
+                }, 50);
+              }
+
+              // Start the typing effect
+              typeText();
+            </script>
+
+            <style>
+              .cursor {
+                animation: blink 0.8s infinite;
+              }
+
+              @keyframes blink {
+                50% {
+                  opacity: 0;
+                }
+              }
+            </style>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+        <div class="about__container container grid">
+          <img src="./assets/img/about.jpg" alt="about" class="about__img" />
+          <div class="about__data">
+            <p class="about__description">
+              Web developer, with extensive knowledge and years of experience,
+              working in web technologies and Ui / Ux design, delivering quality
+              work.
+            </p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">1+</span>
+                <span class="about__info-name"
+                  >Years<br />
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">10+</span>
+                <span class="about__info-name"
+                  >Completed <br />
+                  project</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">04+</span>
+                <span class="about__info-name"
+                  >Companies <br />
+                  worked</span
+                >
+              </div>
             </div>
-        </section>
-
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My educational and professional journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">B.Tech in Computer Engineering</h3>
-                                <span class="qualification__subtitle">The Northcap University, Gurugram</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2024
-                                </div>
-                                <div class="qualification__grade">
-                                    <span class="qualification__grade-label"
-                                        style="font-weight: bold; font-size: small;">Grade: 8.66
-                                        CGPA</span>
-                                    <i class="fas fa-check-circle qualification__grade-value"></i>
-                                    <!-- Use a suitable icon for A grade -->
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Class 12th</h3>
-                                <span class="qualification__subtitle">St Mark’s School, Janakpuri</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2020
-                                </div>
-                                <div class="qualification__grade">
-                                    <span class="qualification__grade-label"
-                                        style="font-weight: bold; font-size: small;">Grade:
-                                        93.4%</span>
-                                    <i class="fas fa-check-circle qualification__grade-value"></i>
-                                    <!-- Use a suitable icon for A grade -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Class 10th</h3>
-                                <span class="qualification__subtitle">St Mark’s School, Janakpuri</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2018
-                                </div>
-                                <div class="qualification__grade">
-                                    <span class="qualification__grade-label"
-                                        style="font-weight: bold; font-size: small;">Grade:
-                                        84.3%</span>
-                                    <i class="fas fa-check-circle qualification__grade-value"></i>
-                                    <!-- Use a suitable icon for A grade -->
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                <div class="qualification__content" data-content id="work">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__data">
-                        <div>
-                            <h3 class="qualification__title">SDE Intern</h3>
-                            <span class="qualification__subtitle">PATIL KAKI (Featured in Shark Tank India S2)</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calendar-alt"></i>
-                                Mar '23 - Jun '23
-                            </div>
-
-                            <!-- Work details for SDE Intern presented as a list -->
-                            <div class="qualification__work-details" style="margin-top: 10px;">
-                                <p style="margin-bottom: 5px;">&bull; Increased marketing team productivity by 23% by
-                                    automating communication channels, saving 9 hours weekly.</p>
-                                <p style="margin-bottom: 5px;">&bull; Reduced order cancellations by 11% by developing
-                                    an efficient order delivery scheduling algorithm.</p>
-                                <p style="margin-bottom: 5px;">&bull; Developed an AWS Lambda script that created and
-                                    deleted databases based on network traffic.</p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                            <span class="qualification__line"></span>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span class="qualification__rounder"></span>
-                        </div>
-
-                        <div>
-                            <h3 class="qualification__title">Summer Intern</h3>
-                            <span class="qualification__subtitle">FUTURE READY TALENT BY AICTE</span>
-                            <div class="qualification__calender">
-                                <i class="uil uil-calendar-alt"></i>
-                                Jun '22 - Jul '22
-                            </div>
-
-                            <!-- Work details for Summer Intern presented as a list -->
-                            <div class="qualification__work-details" style="margin-top: 10px;">
-                                <p style="margin-bottom: 5px;">&bull; Crafted an interactive memory game using HTML,
-                                    CSS, and JavaScript and hosted it on Microsoft Azure.</p>
-                                <p style="margin-bottom: 5px;">&bull; The web application was recognized with a GitHub
-                                    Pro pack and a Microsoft T-shirt.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="about__buttons">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1CRFBaPHYqqZMB3mT0-7iftNOS4DhFe9q"
+                download
+                class="button button--flex"
+              >
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-
-
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
-
-            <div class="portfolio__container container swiper-container"
-                style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
-                <div class="swiper-wrapper"
-                    style="display: flex; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;">
-
-                    <!--==================== PORTFOLIO 0 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio0.png" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">E COMMERCE WEBSITE - MERN Stack</h2>
-                            <p class="portfolio__subtitle">Jun 2023 - Jul 2023</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Implemented role-based access control.</li>
-                                    <li>Integrated Stripe for secure payments.</li>
-                                    <li>Enabled user authentication (website, Google).</li>
-                                    <li>Developed robust email verification.</li>
-                                    <li>Created intuitive product filtering.</li>
-                                    <li>Implemented session management with a 3-day validity for returning users,
-                                        utilizing JWT and bcrypt for secure token handling.</li>
-                                    <li>Designed an intuitive admin dashboard for effective product, order, and user
-                                        management, including valuable analytics for performance tracking.</li>
-                                </ul>
-                            </div>
-
-                            <br />
-                            <a href="https://easy-shop-6isd.onrender.com/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/E_Commerce_Website"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://drive.google.com/file/d/12FAMXM_7V1V86UnjbseSxaA40bJh4HaE/view?usp=drive_link"
-                                class="button button--flex button--small portfolio__button">
-                                Video Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio1.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">Billing System - MERN Stack</h2>
-                            <p class="portfolio__subtitle">Feb 2023 - Mar 2023</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Secure billing system with two forms.</li>
-                                    <li>User authorization, encrypted password protection.</li>
-                                    <li>Download button for exporting records to CSV file.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://billing-system-form.onrender.com/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/Billing-System"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 2 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio2.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">Memories Application - MERN Stack</h2>
-                            <p class="portfolio__subtitle">Jan 2023 - Feb 2023</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Full-stack MERN web application for creating, editing, and deleting posts.</li>
-                                    <li>Modern and scalable design with React, Redux, and Material-UI.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://social-media-a9vd.onrender.com/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/Social-Media-Application-Mern-Stack-"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 3 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio3.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">Weather App - HTML CSS Javascript</h2>
-                            <p class="portfolio__subtitle">Jul 2022 - Jul 2022</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Responsive Weather App using HTML, CSS, and JavaScript.</li>
-                                    <li>User-friendly interface for searching weather information.</li>
-                                    <li>Integration with OpenWeatherMap API for real-time weather data.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://priyanshu1101.github.io/Static-Weather-App/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/Static-Weather-App"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 4 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio4.png" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">Hotel Renting - Spring Framework</h2>
-                            <p class="portfolio__subtitle">Jun 2022 - Jun 2022</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Multi-seller, multi-buyer hotel rental system.</li>
-                                    <li>User registration for login, posting, and renting hotels.</li>
-                                    <li>Utilizes MySQL database for data management.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://github.com/priyanshu1101/HotelRenting.git"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 5 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio5.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">The Simon Game - HTML CSS Javascript</h2>
-                            <p class="portfolio__subtitle">Associated with All India Council for Technical Education
-                                (AICTE)</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>Classic version of Simon Game.</li>
-                                    <li>Start by pressing any key, memorize and repeat key pattern to advance.</li>
-                                    <li>Wrong key ends the game; restart required.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://priyanshu1101.github.io/simongame/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/simongame"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!--==================== PORTFOLIO 6 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio6.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">To-Do List - NodeJs</h2>
-                            <p class="portfolio__subtitle">Associated with The NorthCap University</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>A To-do list app with a user-friendly interface.</li>
-                                    <li>Displays the current date and a common list for adding/removing items.</li>
-                                    <li>Allows users to create custom lists.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://to-do-list-5738.onrender.com/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/Todolist-v2"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 7 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio7.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">TinDog - HTML CSS Javascript</h2>
-                            <p class="portfolio__subtitle">Jun 2022 - Jul 2022</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>TinDog is a fictional application that helps dogs find their perfect match,
-                                        inspired by Tinder.</li>
-                                    <li>The landing page showcases the features and benefits of TinDog, as well as some
-                                        testimonials from happy customers.</li>
-                                    <li>The website is built using HTML, CSS, and Bootstrap, a popular framework for
-                                        responsive web design.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://priyanshu1101.github.io/htmltindog/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/htmltindog"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 8 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio8.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">Daily Journal Website - Node Js</h2>
-                            <p class="portfolio__subtitle">Jun 2022 - Jul 2022</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>The project is a Daily Journal Website that allows users to post and delete
-                                        journal entries with a title and content.</li>
-                                    <li>The project uses MongoDB Atlas, a cloud-based database service, to store and
-                                        manage the journal data.</li>
-                                    <li>The project also uses Sweet Alert, a JavaScript library for creating animated
-                                        alerts, to enhance the user interface and feedback.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://blog-website-clux.onrender.com/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/Blog-Website"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 9 ====================-->
-                    <div class="portfolio__content grid swiper-slide"
-                        style="flex: 0 0 auto; width: 100%; box-sizing: border-box; padding: 0 10px; height: 500px;">
-                        <img src="./assets/img/portfolio9.jpg" alt="portfolio image 1" class="portfolio__img"
-                            style="width: 100%; height: 100%; object-fit: contain;">
-                        <div class="portfolio__data">
-                            <h2 class="portfolio__title">Drum Kit - HTML CSS Javascript</h2>
-                            <p class="portfolio__subtitle">Jun 2022 - Jul 2022</p>
-                            <br />
-                            <div class="portfolio__features">
-                                <h3 class="portfolio__subtitle">Key Features:</h3>
-                                <ul class="portfolio__list" style="list-style-type: disc; margin-left: 20px;">
-                                    <li>The website is built with HTML, CSS, and JavaScript.</li>
-                                    <li>The website has buttons with instrument icons on them.</li>
-                                    <li>The website plays a sound of the corresponding instrument when a button is
-                                        clicked or pressed.</li>
-                                </ul>
-                            </div>
-                            <br />
-                            <a href="https://priyanshu1101.github.io/drumkit/"
-                                class="button button--flex button--small portfolio__button">
-                                Live Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                            <a href="https://github.com/priyanshu1101/drumkit.git"
-                                class="button button--flex button--small portfolio__button">
-                                Github
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next"
-                    style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev"
-                    style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-pagination"
-                    style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);"></div>
-
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Technical Skills</span>
+        <div class="skills__container container grid">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Programming</h1>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
             </div>
-        </section>
-
-
-
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-            <h2 class="section__title">Recommendations</h2>
-            <span class="section__subtitle">What my colleagues say</span>
-
-            <div class="testimonial_container container">
-                <!--==================== TESTIMONIAL 1 ====================-->
-                <div class="testimonial__content" style="cursor: initial;">
-                    <div class="testimonial__data">
-                        <div class="testimonial__header">
-                            <img src="./assets/img/testimonial1.jpg" alt="" class="testimonial__img">
-                            <div>
-                                <h3 class="testimonial__name">Dhananjay Aware</h3>
-                                <span class="testimonial__client">August 10, 2023, Mentor at PatilKaki</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
-                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
-                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
-                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
-                            <iconify-icon icon="ic:round-star" style="color: gold; font-size: xx-large;"></iconify-icon>
-
-                        </div>
-                    </div>
-                    <p class="testimonial__description">I wholeheartedly recommend Priyanshu for his exceptional
-                        intelligence, diligence, and cooperative spirit. He consistently surpasses deadlines, delivering
-                        impressive project outcomes. His honesty, meticulousness, and proactive approach greatly
-                        contribute to team success. Working alongside him has been an absolute pleasure.</p>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">C++</h3>
                 </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__c"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JAVA</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__java"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Javascript</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-game-structure skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Frameworks</h1>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React Js</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__react"></span>
+                </div>
+              </div>
 
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">NODE Js</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__node"></span>
+                </div>
+              </div>
 
-            <div class="contact__container container grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Express Js</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__express"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Spring Boot</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__spring"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 3 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-database skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Databases</h1>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">MySQL</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__mysql"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">MongoDB</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__mongodb"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 4 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-paint-tool skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Tools and Tech</h1>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Material UI</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__materialui"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Git</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__git"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Github</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__github"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React Redux</h3>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__redux"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle"
+          >My educational and professional journey</span
+        >
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#work"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
+            <div
+              class="qualification__button button--flex"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content" data-content id="education">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
                 <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">8368649087</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">priyanshubansal35@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Delhi, India</span>
-                        </div>
-                    </div>
+                  <h3 class="qualification__title">
+                    B.Tech in Computer Engineering
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >The Northcap University, Gurugram</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 2024
+                  </div>
+                  <div class="qualification__grade">
+                    <span
+                      class="qualification__grade-label"
+                      style="font-weight: bold; font-size: small"
+                      >Grade: 8.66 CGPA</span
+                    >
+                    <i
+                      class="fas fa-check-circle qualification__grade-value"
+                    ></i>
+                    <!-- Use a suitable icon for A grade -->
+                  </div>
                 </div>
 
-                <form action="https://formspree.io/f/xvoeonzn" method="POST" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="name" class="contact__label">Name</label>
-                            <input type="text" id="Name" name="name" class="contact__input" required>
-                        </div>
-                        <div class="contact__content">
-                            <label for="email" class="contact__label">Email</label>
-                            <input type="email" id="Email" name="email" class="contact__input" required>
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="message" class="contact__label">Message</label>
-                        <textarea id="message" name="Message" cols="0" rows="7" class="contact__input"
-                            required></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="button button--flex">
-                            Send Message
-                            <i class="uil uil-message button__icon"></i>
-                        </button>
-                    </div>
-                </form>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
 
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
 
+                <div>
+                  <h3 class="qualification__title">Class 12th</h3>
+                  <span class="qualification__subtitle"
+                    >St Mark’s School, Janakpuri</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2019 - 2020
+                  </div>
+                  <div class="qualification__grade">
+                    <span
+                      class="qualification__grade-label"
+                      style="font-weight: bold; font-size: small"
+                      >Grade: 93.4%</span
+                    >
+                    <i
+                      class="fas fa-check-circle qualification__grade-value"
+                    ></i>
+                    <!-- Use a suitable icon for A grade -->
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Class 10th</h3>
+                  <span class="qualification__subtitle"
+                    >St Mark’s School, Janakpuri</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2017 - 2018
+                  </div>
+                  <div class="qualification__grade">
+                    <span
+                      class="qualification__grade-label"
+                      style="font-weight: bold; font-size: small"
+                      >Grade: 84.3%</span
+                    >
+                    <i
+                      class="fas fa-check-circle qualification__grade-value"
+                    ></i>
+                    <!-- Use a suitable icon for A grade -->
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <!--==================== QUALIFICATION CONTENT 2 ====================-->
+          <div
+            class="qualification__content qualification__active"
+            data-content
+            id="work"
+          >
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Software Engineer</h3>
+                <span class="qualification__subtitle"
+                  >Uolo Edtech Private Limited</span
+                >
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Mar '23 - Jun '23
+                </div>
+
+                <!-- Work details for SDE Intern presented as a list -->
+                <div
+                  class="qualification__work-details"
+                  style="margin-top: 10px"
+                >
+                  <p style="margin-bottom: 5px">
+                    &bull; Part of the <b>Fees Team</b>.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Redesigned fee tracking to split payments month-wise
+                    instead of lump sums, letting parents view/pay fees by
+                    month. This cut payment disputes and improved transparency
+                    for <b>200+</b> partner schools.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Developed the "<b>Demand Slip</b>" feature using
+                    <b>AWS SQS</b> to generate fee breakdowns (past dues and
+                    future months per collection head) for
+                    <b>10,000+</b> students daily, improving parental payment
+                    clarity while ensuring scalability.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Automated retries for failed <b>Razorpay</b> payouts
+                    with a script and cron job, reducing manual work by 2 hours
+                    daily and recovering <b>93%</b> of failed transactions
+                    without team intervention.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">MERN Stack Intern</h3>
+                <span class="qualification__subtitle"
+                  >BigPluto Technologies Private Limited</span
+                >
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Jun '22 - Jul '22
+                </div>
+
+                <!-- Work details for Summer Intern presented as a list -->
+                <div
+                  class="qualification__work-details"
+                  style="margin-top: 10px"
+                >
+                  <p style="margin-bottom: 5px">
+                    &bull; Implemented <b>GraphQL</b> to create efficient and
+                    flexible server-side APIs.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Switched to <b>TypeGraphQL</b> in
+                    <b>TypeScript</b> for streamlined GraphQL development with
+                    <b>decorators</b>, <b>reducing boilerplate</b>
+                    and enhancing productivity.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Utilized <b>Urql</b>, a <b>GraphQL client</b>, to
+                    establish seamless data communication between the
+                    application’s frontend and backend.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION 3 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">SDE Intern</h3>
+                <span class="qualification__subtitle"
+                  >PATIL KAKI (Featured in Shark Tank India S2)</span
+                >
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Mar '23 - Jun '23
+                </div>
+
+                <!-- Work details for SDE Intern presented as a list -->
+                <div
+                  class="qualification__work-details"
+                  style="margin-top: 10px"
+                >
+                  <p style="margin-bottom: 5px">
+                    &bull; Increased marketing team productivity by
+                    <b>23%</b> by automating communication channels, saving
+                    <b>9 hours weekly</b>.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Reduced order cancellations by <b>11%</b> by
+                    developing an efficient order delivery scheduling algorithm.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; Developed an <b>AWS Lambda</b> script that created
+                    and deleted databases based on network traffic.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION 4 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Summer Intern</h3>
+                <span class="qualification__subtitle"
+                  >FUTURE READY TALENT BY AICTE</span
+                >
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Jun '22 - Jul '22
+                </div>
+
+                <!-- Work details for Summer Intern presented as a list -->
+                <div
+                  class="qualification__work-details"
+                  style="margin-top: 10px"
+                >
+                  <p style="margin-bottom: 5px">
+                    &bull; Crafted an interactive <b>memory game</b> using HTML,
+                    CSS, and JavaScript and hosted it on <b>Microsoft Azure</b>.
+                  </p>
+                  <p style="margin-bottom: 5px">
+                    &bull; The web application was recognized with a
+                    <b>GitHub Pro pack</b> and a <b>Microsoft T-shirt</b>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div
+          class="portfolio__container container swiper-container"
+          style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            class="swiper-wrapper"
+            style="
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              -webkit-overflow-scrolling: touch;
+            "
+          >
+            <!--==================== PORTFOLIO 0 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio0.png"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">
+                  E COMMERCE WEBSITE - MERN Stack
+                </h2>
+                <p class="portfolio__subtitle">Jun 2023 - Jul 2023</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>Implemented role-based access control.</li>
+                    <li>Integrated Stripe for secure payments.</li>
+                    <li>Enabled user authentication (website, Google).</li>
+                    <li>Developed robust email verification.</li>
+                    <li>Created intuitive product filtering.</li>
+                    <li>
+                      Implemented session management with a 3-day validity for
+                      returning users, utilizing JWT and bcrypt for secure token
+                      handling.
+                    </li>
+                    <li>
+                      Designed an intuitive admin dashboard for effective
+                      product, order, and user management, including valuable
+                      analytics for performance tracking.
+                    </li>
+                  </ul>
+                </div>
+
+                <br />
+                <a
+                  href="https://easy-shop-6isd.onrender.com/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/E_Commerce_Website"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/12FAMXM_7V1V86UnjbseSxaA40bJh4HaE/view?usp=drive_link"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Video Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio1.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">Billing System - MERN Stack</h2>
+                <p class="portfolio__subtitle">Feb 2023 - Mar 2023</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>Secure billing system with two forms.</li>
+                    <li>User authorization, encrypted password protection.</li>
+                    <li>Download button for exporting records to CSV file.</li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://billing-system-form.onrender.com/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/Billing-System"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio2.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">
+                  Memories Application - MERN Stack
+                </h2>
+                <p class="portfolio__subtitle">Jan 2023 - Feb 2023</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>
+                      Full-stack MERN web application for creating, editing, and
+                      deleting posts.
+                    </li>
+                    <li>
+                      Modern and scalable design with React, Redux, and
+                      Material-UI.
+                    </li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://social-media-a9vd.onrender.com/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/Social-Media-Application-Mern-Stack-"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio3.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">
+                  Weather App - HTML CSS Javascript
+                </h2>
+                <p class="portfolio__subtitle">Jul 2022 - Jul 2022</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>
+                      Responsive Weather App using HTML, CSS, and JavaScript.
+                    </li>
+                    <li>
+                      User-friendly interface for searching weather information.
+                    </li>
+                    <li>
+                      Integration with OpenWeatherMap API for real-time weather
+                      data.
+                    </li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://priyanshu1101.github.io/Static-Weather-App/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/Static-Weather-App"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 4 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio4.png"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">
+                  Hotel Renting - Spring Framework
+                </h2>
+                <p class="portfolio__subtitle">Jun 2022 - Jun 2022</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>Multi-seller, multi-buyer hotel rental system.</li>
+                    <li>
+                      User registration for login, posting, and renting hotels.
+                    </li>
+                    <li>Utilizes MySQL database for data management.</li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://github.com/priyanshu1101/HotelRenting.git"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 5 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio5.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">
+                  The Simon Game - HTML CSS Javascript
+                </h2>
+                <p class="portfolio__subtitle">
+                  Associated with All India Council for Technical Education
+                  (AICTE)
+                </p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>Classic version of Simon Game.</li>
+                    <li>
+                      Start by pressing any key, memorize and repeat key pattern
+                      to advance.
+                    </li>
+                    <li>Wrong key ends the game; restart required.</li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://priyanshu1101.github.io/simongame/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/simongame"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 6 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio6.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">To-Do List - NodeJs</h2>
+                <p class="portfolio__subtitle">
+                  Associated with The NorthCap University
+                </p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>A To-do list app with a user-friendly interface.</li>
+                    <li>
+                      Displays the current date and a common list for
+                      adding/removing items.
+                    </li>
+                    <li>Allows users to create custom lists.</li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://to-do-list-5738.onrender.com/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/Todolist-v2"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 7 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio7.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">TinDog - HTML CSS Javascript</h2>
+                <p class="portfolio__subtitle">Jun 2022 - Jul 2022</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>
+                      TinDog is a fictional application that helps dogs find
+                      their perfect match, inspired by Tinder.
+                    </li>
+                    <li>
+                      The landing page showcases the features and benefits of
+                      TinDog, as well as some testimonials from happy customers.
+                    </li>
+                    <li>
+                      The website is built using HTML, CSS, and Bootstrap, a
+                      popular framework for responsive web design.
+                    </li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://priyanshu1101.github.io/htmltindog/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/htmltindog"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 8 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio8.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">
+                  Daily Journal Website - Node Js
+                </h2>
+                <p class="portfolio__subtitle">Jun 2022 - Jul 2022</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>
+                      The project is a Daily Journal Website that allows users
+                      to post and delete journal entries with a title and
+                      content.
+                    </li>
+                    <li>
+                      The project uses MongoDB Atlas, a cloud-based database
+                      service, to store and manage the journal data.
+                    </li>
+                    <li>
+                      The project also uses Sweet Alert, a JavaScript library
+                      for creating animated alerts, to enhance the user
+                      interface and feedback.
+                    </li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://blog-website-clux.onrender.com/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/Blog-Website"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 9 ====================-->
+            <div
+              class="portfolio__content grid swiper-slide"
+              style="
+                flex: 0 0 auto;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 10px;
+                height: 500px;
+              "
+            >
+              <img
+                src="./assets/img/portfolio9.jpg"
+                alt="portfolio image 1"
+                class="portfolio__img"
+                style="width: 100%; height: 100%; object-fit: contain"
+              />
+              <div class="portfolio__data">
+                <h2 class="portfolio__title">Drum Kit - HTML CSS Javascript</h2>
+                <p class="portfolio__subtitle">Jun 2022 - Jul 2022</p>
+                <br />
+                <div class="portfolio__features">
+                  <h3 class="portfolio__subtitle">Key Features:</h3>
+                  <ul
+                    class="portfolio__list"
+                    style="list-style-type: disc; margin-left: 20px"
+                  >
+                    <li>
+                      The website is built with HTML, CSS, and JavaScript.
+                    </li>
+                    <li>
+                      The website has buttons with instrument icons on them.
+                    </li>
+                    <li>
+                      The website plays a sound of the corresponding instrument
+                      when a button is clicked or pressed.
+                    </li>
+                  </ul>
+                </div>
+                <br />
+                <a
+                  href="https://priyanshu1101.github.io/drumkit/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/priyanshu1101/drumkit.git"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-button-next"
+            style="
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+            "
+          >
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div
+            class="swiper-button-prev"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              transform: translateY(-50%);
+            "
+          >
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div
+            class="swiper-pagination"
+            style="
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+            "
+          ></div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+        <h2 class="section__title">Recommendations</h2>
+        <span class="section__subtitle">What my colleagues say</span>
+
+        <div class="testimonial_container container">
+          <!--==================== TESTIMONIAL 1 ====================-->
+          <div class="testimonial__content" style="cursor: initial">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/C4D03AQFi1_81QN0TmA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1652423042751?e=1744243200&v=beta&t=yCsTxz-iFABq9VpJshCVyRMmBOtcdx9O5X0TBJyn9fk"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div>
+                  <h3 class="testimonial__name">Anshu Sharma</h3>
+                  <span class="testimonial__client"
+                    >February 4, 2025, CTO at Uolo.com</span
+                  >
+                </div>
+              </div>
+
+              <div>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              Priyanshu joined Uolo as part of our most recent campus hiring
+              batch. He was among the top performers in our rigorous onboarding
+              program. Priyanshu worked on our Fee module, one of the more
+              complex systems in our ERP products. He quickly understood the
+              complexities of the system and made a positive impact within a
+              short timeframe. I wish Priyanshu the best and am confident that
+              he will be a valuable asset to any organization he joins.
+            </p>
+          </div>
+          <div class="testimonial__content" style="cursor: initial">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img
+                  src="./assets/img/testimonial1.jpg"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div>
+                  <h3 class="testimonial__name">Dhananjay Aware</h3>
+                  <span class="testimonial__client"
+                    >August 10, 2023, Mentor at PatilKaki</span
+                  >
+                </div>
+              </div>
+
+              <div>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="ic:round-star"
+                  style="color: gold; font-size: xx-large"
+                ></iconify-icon>
+              </div>
+            </div>
+            <p class="testimonial__description">
+              I wholeheartedly recommend Priyanshu for his exceptional
+              intelligence, diligence, and cooperative spirit. He consistently
+              surpasses deadlines, delivering impressive project outcomes. His
+              honesty, meticulousness, and proactive approach greatly contribute
+              to team success. Working alongside him has been an absolute
+              pleasure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">8368649087</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle"
+                  >priyanshubansal35@gmail.com</span
+                >
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Delhi, India</span>
+              </div>
+            </div>
+          </div>
+
+          <form
+            action="https://formspree.io/f/xvoeonzn"
+            method="POST"
+            class="contact__form grid"
+          >
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="name" class="contact__label">Name</label>
+                <input
+                  type="text"
+                  id="Name"
+                  name="name"
+                  class="contact__input"
+                  required
+                />
+              </div>
+              <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <input
+                  type="email"
+                  id="Email"
+                  name="email"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="message" class="contact__label">Message</label>
+              <textarea
+                id="message"
+                name="Message"
+                cols="0"
+                rows="7"
+                class="contact__input"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-        <div class="footer__bg">
-            <div style="display: flex; justify-content: space-between; align-items: center;" class="container grid">
-                <div>
-                    <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Priyanshu</h1>
-                    <h2 style="font-size: 1rem; color: white;">Fullstack Developer</h2>
-                </div>
-                <ul style="list-style: none; display: flex; gap: 20px; color: white;">
-                    <li>
-                        <a href="#portfolio" style="text-decoration: none;" class="footer__links">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" style="text-decoration: none;" class="footer__links">Contact
-                            me</a>
-                    </li>
-                </ul>
-            </div>
-            <p class="footer__copy">&#169; Priyanshu Bansal. All right reserved</p>
+      <div class="footer__bg">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+          class="container grid"
+        >
+          <div>
+            <h1 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white">
+              Priyanshu
+            </h1>
+            <h2 style="font-size: 1rem; color: white">Fullstack Developer</h2>
+          </div>
+          <ul style="list-style: none; display: flex; gap: 20px; color: white">
+            <li>
+              <a
+                href="#portfolio"
+                style="text-decoration: none"
+                class="footer__links"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                style="text-decoration: none"
+                class="footer__links"
+                >Contact me</a
+              >
+            </li>
+          </ul>
         </div>
+        <p class="footer__copy">&#169; Priyanshu Bansal. All right reserved</p>
+      </div>
     </footer>
-
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" aria-label="scroll-up" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+      <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
     <!--==================== SWIPER JS ====================-->
@@ -1044,6 +1638,5 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
